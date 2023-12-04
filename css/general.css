@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text: 100, 200, 300, 400, 500, 600, 700, 800, 900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans: 100, 200, 300, 400, 500, 600, 700, 800, 900');
+@import url('https://fonts.googleapis.com/css?family=Netbook: 100, 200, 300, 400, 500, 600, 700, 800, 900');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+
+:root
+{
+    --blue-color: #02529C;
+    --white-color: #fff;
+    --red-color: #dc1e35;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Crimson Text';
+}
+
+h1
+{
+    font-size: 3em;
+}
+
+h2
+{
+    font-size: 2em;
+}
+
+h3
+{
+    font-size: 1.55em;
+}
+
+h4
+{
+    font-size: 1.22em;
+}
+
+a
+{
+    font-size: 1em;
+}
+
+img, video
+{
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
