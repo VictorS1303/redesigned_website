@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px)
+{
+    .gallery-image-container
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-image-container img
+    {
+        height: 100%;
+        width: 100%;
+    }
+}

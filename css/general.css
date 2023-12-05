@@ -8,7 +8,7 @@
     --blue-color: #02529C;
     --white-color: #fff;
     --red-color: #dc1e35;
-    --overlay-background-color: rgba(0, 0, 0, .45);
+    --overlay-background-color: rgba(0, 0, 0, .3);
 
     /* Radius */
     --base-border-radius: 10px;
@@ -48,11 +48,12 @@ main
 h1, h2, h3, h4, h5, h6
 {
     font-family: 'Crimson Text';
+    white-space: nowrap;
 }
 
 h1
 {
-    font-size: 3em;
+    font-size: max(3em, 20px);
 }
 
 h2
@@ -70,6 +71,11 @@ h4
     font-size: 1.22em;
 }
 
+p
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Links */
 a
 {
@@ -78,6 +84,47 @@ a
     text-decoration: none;
     color: inherit;
     font-family: inherit;
+}
+
+section
+{
+    position: relative;
+}
+
+section:first-child header h1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 8cqw;
+}
+
+section:not(:first-child) .container.gallery-heading-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section:not(:first-child) .container.gallery-heading-container header h1
+{
+    display: inline-block;
+    color: var(--red-color);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--red-color);
+    font-size: 7cqw;
+}
+
+section:not(:first-child) .container.gallery-heading-container p
+{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 4cqw;
 }
 
 /* Link(s) with active class */
@@ -119,7 +166,7 @@ i.fas.fa-bars
     font-size: 1.3rem;
     color: var(--red-color);
     cursor: pointer;
-    z-index: 3000;
+    z-index: 10000;
     transition: right .4s ease-in;
 }
 
@@ -139,7 +186,7 @@ nav
     background-color: var(--blue-color);
     box-shadow: var(--box-shadow);
     border-left: 2px solid var(--red-color);
-    z-index: 4000;
+    z-index: 10000;
     transition: right .4s ease-in;
 }
 
@@ -189,6 +236,16 @@ nav ul li a:hover:not(.active)::before
     transition: width .2s ease-in;
 }
 
+nav .logo
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: var(--white-color);
+}
+
 /* Footer */
 footer
 {
@@ -205,6 +262,7 @@ footer
     width: 100%;
     padding: 35px 0;
     color: var(--white-color);
+    z-index: 5000;
 }
 
 footer div
