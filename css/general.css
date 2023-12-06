@@ -201,7 +201,7 @@ i.fas.fa-bars.active
     transition: right .4s ease-in;
 }
 
-nav
+nav.main-nav
 {
     position: fixed;
     height: 100vh;
@@ -219,6 +219,14 @@ nav.active
 {
     right: 0;
     transition: right .4s ease-in;
+}
+
+nav.main-nav .container.nav-container
+{
+    display: none;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #fff;
 }
 
 nav ul

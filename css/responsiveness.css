@@ -7,16 +7,18 @@
         display: none;
     }
 
+
     nav.main-nav
     {
-        /* position: static; */
-        display: flex;
-        justify-content: space-between;
-        width: 100vw;
-        right: 0;
         height: 70px;
-        border-left: none;
-        border-bottom: 2px solid var(--red-color);
+        width: 100%;
+        left: 0;
+    }
+
+    nav.main-nav .container.nav-container
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* Slider */
