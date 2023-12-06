@@ -4,38 +4,3 @@ section.activities
     position: relative;
     z-index: 5000;
 }
-
-
-
-/* Section: Activities --> Gallery */
-section.gallery
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-    margin-top: 30px;
-    padding: 0 100px;
-}
-
-section.gallery img
-{
-    cursor: pointer;
-}
-
-.gallery-image-container
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-}
-
-
-.gallery-image-container div
-{
-    position: relative;
-}
-
-.gallery-image-container div

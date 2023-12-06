@@ -1,5 +1,31 @@
 @media screen and (min-width: 768px)
 {
+
+    /* Navbar */
+    i.fas.fa-bars
+    {
+        display: none;
+    }
+
+    nav.main-nav
+    {
+        /* position: static; */
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        right: 0;
+        height: 70px;
+        border-left: none;
+        border-bottom: 2px solid var(--red-color);
+    }
+
+    /* Slider */
+    .slide .slide-content p
+    {
+        font-size: 3cqw;
+    }
+
+    /* Gallery */
     .gallery-image-container
     {
         grid-template-columns: repeat(3, 1fr);

@@ -18,6 +18,11 @@
     --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 /* Global */
 *
 {
@@ -86,10 +91,18 @@ a
     font-family: inherit;
 }
 
+/* Link(s) with active class */
+a.active
+{
+    border-bottom: 2px solid var(--red-color);
+}
+
+/* Section */
 section
 {
     position: relative;
 }
+
 
 section:first-child header h1
 {
@@ -103,35 +116,47 @@ section:first-child header h1
     font-size: 8cqw;
 }
 
-section:not(:first-child) .container.gallery-heading-container
+/* Section: * --> Gallery (all sections with a gallery) */
+section.gallery
 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 0 100px;
 }
 
-section:not(:first-child) .container.gallery-heading-container header h1
+section.gallery img
+{
+    border-radius: calc(var(--base-border-radius) / 1.5);
+    cursor: pointer;
+}
+
+.gallery-image-container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.gallery-image-container div
+{
+    position: relative;
+}
+
+section:not(:first-child) header h1
 {
     display: inline-block;
     color: var(--red-color);
     text-transform: uppercase;
     border-bottom: 2px solid var(--red-color);
     font-size: 7cqw;
+    margin-bottom: 20px;
 }
 
-section:not(:first-child) .container.gallery-heading-container p
-{
-    text-align: center;
-    margin: 20px 0;
-    font-size: 4cqw;
-}
-
-/* Link(s) with active class */
-a.active
-{
-    border-bottom: 2px solid var(--red-color);
-}
 
 /* List elements */
 li
