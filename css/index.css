@@ -57,9 +57,9 @@ section.hero .container.slider-container
     white-space: nowrap;
 }
 
-.slide .slide-content p
+.slide .content.slide-content p.slider-desc
 {
-    font-size: 4cqw;
+    font-size: 15px;
     padding: 20px 5px;
 }
 

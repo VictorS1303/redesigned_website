@@ -7,24 +7,31 @@
         display: none;
     }
 
-
     nav.main-nav
     {
-        height: 70px;
-        width: 100%;
+        display: flex;
+        justify-content: space-between;
         left: 0;
+        width: 100vw;
+        height: 70px;
+        border-left: none;
+        border-bottom: 2px solid var(--red-color);
     }
 
-    nav.main-nav .container.nav-container
+    nav.main-nav .logo
     {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        order: -1;
     }
 
     /* Slider */
+    .slide .content.slide-content
+    {
+        width: 40%;
+    }
+
     .slide .slide-content p
     {
-        font-size: 3cqw;
+        font-size: 25px;
     }
 
     /* Gallery */
@@ -38,4 +45,5 @@
         height: 100%;
         width: 100%;
     }
+
 }

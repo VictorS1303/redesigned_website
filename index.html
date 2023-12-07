@@ -17,25 +17,23 @@
 <body>
     <i class="fas fa-bars btn nav-toggle-btn" id="nav_toggle_btn"></i>
     <nav class="main-nav" id="main_nav">
-        <div class="container nav-container">
-            <ul>
-                <li>
-                    <a href="jonshus.html" class="active">Jónshús</a>
-                </li>
-                <li>
-                    <a href="activities.html">Activities</a>
-                </li>
-                <li>
-                    <a href="jonsigurdsson.html">Jón Sigurðsson</a>
-                </li>
-                <li>
-                    <a href="studyapartments.html">Studielejligheder</a>
-                </li>
-            </ul>
-            <a href="#top">
-                <h1 class="logo">Logo</h1>
-            </a>
-        </div>
+        <ul>
+            <li>
+                <a href="jonshus.html" class="active">Jónshús</a>
+            </li>
+            <li>
+                <a href="activities.html">Activities</a>
+            </li>
+            <li>
+                <a href="jonsigurdsson.html">Jón Sigurðsson</a>
+            </li>
+            <li>
+                <a href="studyapartments.html">Studielejligheder</a>
+            </li>
+        </ul>
+        <a href="#top">
+            <h1 class="logo">Logo</h1>
+        </a>
     </nav>
 
     <!-- Section: Hero -->
@@ -123,15 +121,19 @@
         <div class="contact">
             <div>
                 <h4>
-                    <i class="fa-solid fa-phone"></i>
-                    <span>
-                        (+45) 23 28 1944
-                    </span>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            (+45) 23 28 1944
+                        </span>
+                    </div>
+                    <div>
 
-                    <span>
                         <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:info@jonshus.dk">info@jonshus.dk</a>
-                    </span>
+                        <span>
+                            <a href="mailto:info@jonshus.dk">info@jonshus.dk</a>
+                        </span>
+                    </div>
                 </h4>
             </div>
 
@@ -158,8 +160,8 @@
         </div>
 
         <div class="newsletter-and-socials">
-            <label for="email_input">Newsletter</label>
             <form>
+                <label for="email_input">Newsletter</label>
                 <input type="email" class="input email-input" id="email_input" placeholder="Enter e-mail">
             </form>
 

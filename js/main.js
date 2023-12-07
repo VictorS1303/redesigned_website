@@ -17,4 +17,16 @@ function toggleNavBar()
 {
     navBarToggleBtn.classList.toggle('active')
     mainNav.classList.toggle('active')
+
+    if (navBarToggleBtn.classList.contains('active'))
+    {
+        navBarToggleBtn.classList.remove('fa-bars')
+        navBarToggleBtn.classList.add('fa-times')
+    }
+    else
+    {
+        navBarToggleBtn.classList.add('fa-bars')
+        navBarToggleBtn.classList.remove('fa-times')
+    }
+
 }

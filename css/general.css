@@ -103,6 +103,11 @@ section
     position: relative;
 }
 
+section:not(:first-child)
+{
+    padding: 100px;
+}
+
 
 section:first-child header h1
 {
@@ -183,19 +188,20 @@ label
 }
 
 /* Navbar */
-i.fas.fa-bars
+i.fas.fa-bars,
+i.fas.fa-times
 {
     position: fixed;
     right: 30px;
     top: 30px;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: var(--red-color);
     cursor: pointer;
     z-index: 10000;
     transition: right .4s ease-in;
 }
 
-i.fas.fa-bars.active
+i.fas.fa-times.active
 {
     right: 260px;
     transition: right .4s ease-in;
@@ -207,7 +213,7 @@ nav.main-nav
     height: 100vh;
     right: -230px;
     top: 0;
-    width: 230px;
+    width: 45vw;
     background-color: var(--blue-color);
     box-shadow: var(--box-shadow);
     border-left: 2px solid var(--red-color);
@@ -320,7 +326,8 @@ footer div hr.divider
     margin: 15px 0;
 }
 
-footer div i
+footer div i,
+footer div h4 span i
 {
     display: block;
     margin-bottom: 10px;
