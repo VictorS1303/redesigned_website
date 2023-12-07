@@ -46,4 +46,35 @@
         width: 100%;
     }
 
+    /* Footer */
+    footer.footer
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer.footer .contact
+    {
+        display: none;
+    }
+
+    footer.footer .newsletter-and-socials
+    {
+        position: relative;
+        left: 50%;
+    }
+
+    footer.footer hr.divider
+    {
+        display: none;
+    }
+
+    footer.footer .newsletter-and-socials .container.socials-container .contacts
+    {
+        display: flex;
+    }
+
+
 }

@@ -4,3 +4,9 @@ section.activities
     position: relative;
     z-index: 5000;
 }
+
+footer.footer .container.socials-container
+{
+    display: flex;
+    gap: 50px;
+}

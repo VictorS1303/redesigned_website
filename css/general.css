@@ -286,7 +286,7 @@ nav .logo
 }
 
 /* Footer */
-footer
+footer.footer
 {
     display: flex;
     flex-direction: column;
@@ -304,19 +304,19 @@ footer
     z-index: 5000;
 }
 
-footer div
+footer.footer div
 {
     font-weight: 700;
     margin: 15px 0;
 }
 
-footer div h4 span
+footer.footer div h4 span
 {
     display: block;
     margin-bottom: 10px;
 }
 
-footer div hr.divider
+footer.footer div hr.divider
 {
     position: absolute;
     left: 50%;
@@ -326,19 +326,19 @@ footer div hr.divider
     margin: 15px 0;
 }
 
-footer div i,
-footer div h4 span i
+footer.footer div i,
+footer.footer div h4 span i
 {
     display: block;
     margin-bottom: 10px;
 }
 
-footer div a
+footer.footer div a
 {
     font-family: 'Crimson Text', sans-serif;
 }
 
-footer .newsletter-and-socials input
+footer.footer .newsletter-and-socials input
 {
     font-family: 'Crimson Text';
     position: absolute;
@@ -351,13 +351,25 @@ footer .newsletter-and-socials input
     margin: 5px 0 20px 0;
 }
 
-footer .newsletter-and-socials .container.socials-container
+footer.footer .newsletter-and-socials .container.socials-container
 {
     display: flex;
     margin-top: 80px;
     justify-content: center;
     gap: 25px;
     font-size: 20px;
+}
+
+
+footer.footer .container.socials-container>div
+{
+    display: flex;
+    gap: 10px;
+}
+
+footer.footer .newsletter-and-socials .container.socials-container .contacts
+{
+    display: none;
 }
 
 /* Overlay */
