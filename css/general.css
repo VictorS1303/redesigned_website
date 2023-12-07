@@ -213,7 +213,7 @@ nav.main-nav
     height: 100vh;
     right: -230px;
     top: 0;
-    width: 45vw;
+    width: 230px;
     background-color: var(--blue-color);
     box-shadow: var(--box-shadow);
     border-left: 2px solid var(--red-color);
