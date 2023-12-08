@@ -12,6 +12,11 @@
         font-size: 25px;
     }
 
+    .container.opening-hours-slider-container
+    {
+        display: none;
+    }
+
     /* Gallery */
     .gallery-image-container
     {

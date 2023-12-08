@@ -59,24 +59,32 @@ section.hero .container.slider-container
 
 .slide .content.slide-content p.slider-desc
 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     padding: 20px 5px;
 }
 
+.slide .content.slide-content p.slider-desc span
+{
+    display: inline-block;
+    margin-top: 5px;
+}
+
 .slide:nth-child(1)
 {
-    background-image: url('../images/hero_slider/image_1.webp');
+    background-image: url('../images/hero_slider/jonshus.webp');
 }
 
 .slide:nth-child(2)
 {
-    background-image: url('../images/hero_slider/image_2.webp');
+    background-image: url('../images/hero_slider/library_horizontal.webp');
 }
 
 .slide:nth-child(3)
 {
-    background-image: url('../images/hero_slider/image_3.webp');
+    background-image: url('../images/hero_slider/sculpture.webp');
 }
+
 
 /* Slider Controls */
 section.hero .container.slider-btns-container
@@ -126,7 +134,6 @@ section.get-to-know-us
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     text-align: center;
 }
 

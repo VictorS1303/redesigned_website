@@ -1,15 +1,14 @@
-// Navbar
 const navBarToggleBtn = document.getElementById('nav_toggle_btn')
 const mainNav = document.getElementById('main_nav')
-
-
-// Image Gallery
 const galleryImageContainer = document.createElement('div')
 const galleryImages = document.querySelectorAll('.gallery-image')
+const scrollToTopBtn = document.getElementById('scroll_to_top_btn')
+
 
 // EVENT LISTENERS //
 navBarToggleBtn.addEventListener('click', toggleNavBar)
 window.addEventListener('scroll', changeNavToggleBtnColor)
+
 
 // FUNCTIONS //
 
@@ -30,8 +29,8 @@ function toggleNavBar()
         navBarToggleBtn.classList.remove('fa-times')
     }
 }
-// Change Navbar Toggle Button Color
 
+// Change Navbar Toggle Button Color
 function changeNavToggleBtnColor()
 {
     window.scrollY > 875

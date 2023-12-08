@@ -8,7 +8,7 @@
     --blue-color: #02529C;
     --white-color: #fff;
     --red-color: #dc1e35;
-    --overlay-background-color: rgba(0, 0, 0, .3);
+    --overlay-background-color: rgba(0, 0, 0, .45);
 
     /* Radius */
     --base-border-radius: 10px;
@@ -41,6 +41,7 @@ body
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Main */
@@ -105,14 +106,14 @@ section
 
 section:not(:first-child)
 {
-    padding: 100px;
+    padding: 50px;
 }
 
 
 section:first-child header h1
 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white-color);
@@ -394,4 +395,20 @@ footer.footer .newsletter-and-socials .container.socials-container .contacts
     background-color: var(--overlay-background-color);
     height: 100%;
     width: 100%;
+}
+
+.scroll-to-top-btn
+{
+    position: fixed;
+    bottom: 30px;
+    right: -60px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: calc(var(--base-border-radius) * 5);
+    background-color: transparent;
+    border: 2px solid var(--red-color);
+    color: var(--red-color);
+    cursor: pointer;
+    transition: color .2s ease-in, background .2s ease-in;
 }
