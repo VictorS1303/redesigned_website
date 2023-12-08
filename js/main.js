@@ -2,13 +2,14 @@
 const navBarToggleBtn = document.getElementById('nav_toggle_btn')
 const mainNav = document.getElementById('main_nav')
 
+
 // Image Gallery
 const galleryImageContainer = document.createElement('div')
 const galleryImages = document.querySelectorAll('.gallery-image')
 
 // EVENT LISTENERS //
 navBarToggleBtn.addEventListener('click', toggleNavBar)
-
+window.addEventListener('scroll', changeNavToggleBtnColor)
 
 // FUNCTIONS //
 
@@ -28,5 +29,12 @@ function toggleNavBar()
         navBarToggleBtn.classList.add('fa-bars')
         navBarToggleBtn.classList.remove('fa-times')
     }
+}
+// Change Navbar Toggle Button Color
 
+function changeNavToggleBtnColor()
+{
+    window.scrollY > 875
+        ? navBarToggleBtn.classList.add('red')
+        : navBarToggleBtn.classList.remove('red')
 }

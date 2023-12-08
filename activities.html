@@ -16,7 +16,13 @@
 <body>
     <i class="fas fa-bars btn nav-toggle-btn" id="nav_toggle_btn"></i>
     <nav class="main-nav" id="main_nav">
+        <a href="index.html">
+            <img src="images/logos/logo.webp" class="logo" alt="jonshus logo">
+        </a>
         <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
             <li>
                 <a href="jonshus.html">Jónshús</a>
             </li>
@@ -30,8 +36,6 @@
                 <a href="studyapartments.html">Studielejligheder</a>
             </li>
         </ul>
-
-        <h3 class="logo">Logo</h3>
     </nav>
 
     <!-- Section: Activities -->
@@ -98,29 +102,25 @@
                 </span>
             </h4>
             <hr class="divider">
-            </hr>
         </div>
 
         <div class="contact">
-            <div>
-                <h4>
+            <h4>
+                <span>
                     <i class="fa-solid fa-phone"></i>
                     <span>
-                        (+45) 23 28 1944
+                        (+45) 23 28 19 44
                     </span>
+                </span>
+                <span>
 
+                    <i class="fa-solid fa-envelope"></i>
                     <span>
-                        <i class="fa-solid fa-envelope"></i>
                         <a href="mailto:info@jonshus.dk">info@jonshus.dk</a>
                     </span>
-                </h4>
-            </div>
-
-            <div>
-
-            </div>
+                </span>
+            </h4>
             <hr class="divider">
-            </hr>
         </div>
 
 
@@ -135,23 +135,33 @@
                 </span>
             </h4>
             <hr class="divider">
-            </hr>
+
         </div>
 
         <div class="newsletter-and-socials">
-            <label for="email_input">Newsletter</label>
             <form>
+                <label for="email_input">Newsletter</label>
                 <input type="email" class="input email-input" id="email_input" placeholder="Enter e-mail">
             </form>
 
             <div class="container socials-container">
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
+                <div class="socials">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
 
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+                <div class="contacts">
+                    <a href="mailto:info@jonshus.dk">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:23281944">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

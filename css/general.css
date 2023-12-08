@@ -183,7 +183,6 @@ label
 {
     font-family: 'Crimson Text';
     display: block;
-    text-align: left;
     font-size: 20px;
 }
 
@@ -195,47 +194,70 @@ i.fas.fa-times
     right: 30px;
     top: 30px;
     font-size: 1.6rem;
-    color: var(--red-color);
+    color: var(--white-color);
     cursor: pointer;
     z-index: 10000;
-    transition: right .4s ease-in;
+    transition: right .4s ease-in, color .2s ease-in;
 }
 
+i.fas.fa-bars:hover,
+i.fas.fa-times:hover
+{
+    color: var(--red-color);
+    transition: color .2s ease-in;
+}
+
+i.fas.fa-bars.red,
+i.fas.fa-times.red
+{
+    color: var(--red-color);
+    transition: color .2s ease-in;
+}
+
+i.fas.fa-bars.active,
 i.fas.fa-times.active
 {
     right: 260px;
     transition: right .4s ease-in;
 }
 
+i.fas.fa-bars
+{
+    display: block;
+    transition: right .4s ease-in;
+}
+
 nav.main-nav
 {
+    font-family: 'Open Sans', sans-serif;
     position: fixed;
     height: 100vh;
-    right: -230px;
-    top: 0;
     width: 230px;
+    right: -230px;
     background-color: var(--blue-color);
-    box-shadow: var(--box-shadow);
     border-left: 2px solid var(--red-color);
     z-index: 10000;
     transition: right .4s ease-in;
 }
 
-nav.active
+nav.main-nav.active
 {
     right: 0;
     transition: right .4s ease-in;
 }
 
-nav.main-nav .container.nav-container
+nav.main-nav .logo
 {
-    display: none;
-    height: 100%;
-    width: 100%;
-    border: 2px solid #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 125px;
+    width: 125px;
+    object-fit: contain;
 }
 
-nav ul
+nav.main-nav ul
 {
     position: absolute;
     top: 50%;
@@ -244,46 +266,37 @@ nav ul
     text-align: center;
 }
 
-nav ul li
+nav.main-nav ul li
 {
     margin-bottom: 20px;
 }
 
-nav ul li a
+
+nav.main-nav ul li a
 {
     position: relative;
-    font-family: 'Crimson Text';
-    font-weight: 700;
+    font-size: 20px;
     color: var(--white-color);
-    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
-nav ul li a:not(.active)::before
+nav.main-nav ul li a:not(.active)::before
 {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -2px;
-    width: 0;
+    bottom: -5px;
     border-bottom: 2px solid var(--red-color);
+    width: 0;
     transition: width .2s ease-in;
 }
 
-nav ul li a:hover:not(.active)::before
+nav.main-nav ul li a:not(.active):hover::before
 {
     width: 100%;
     transition: width .2s ease-in;
 }
 
-nav .logo
-{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 40px;
-    color: var(--white-color);
-}
 
 /* Footer */
 footer.footer

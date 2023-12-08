@@ -1,28 +1,6 @@
 @media screen and (min-width: 768px)
 {
 
-    /* Navbar */
-    i.fas.fa-bars
-    {
-        display: none;
-    }
-
-    nav.main-nav
-    {
-        display: flex;
-        justify-content: space-between;
-        left: 0;
-        width: 100vw;
-        height: 70px;
-        border-left: none;
-        border-bottom: 2px solid var(--red-color);
-    }
-
-    nav.main-nav .logo
-    {
-        order: -1;
-    }
-
     /* Slider */
     .slide .content.slide-content
     {
