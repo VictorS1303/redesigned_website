@@ -33,7 +33,7 @@ function toggleNavBar()
 // Change Navbar Toggle Button Color
 function changeNavToggleBtnColor()
 {
-    window.scrollY > 875
+    window.scrollY > 200
         ? navBarToggleBtn.classList.add('red')
         : navBarToggleBtn.classList.remove('red')
 }

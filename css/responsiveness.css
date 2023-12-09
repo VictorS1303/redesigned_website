@@ -1,6 +1,16 @@
 @media screen and (min-width: 768px)
 {
 
+    section:not(:first-child)
+    {
+        height: auto;
+    }
+
+    section:not(:first-child) header h1
+    {
+        font-size: 50px;
+    }
+
     /* Slider */
     .slide .content.slide-content
     {
@@ -18,7 +28,7 @@
     }
 
     /* Gallery */
-    .gallery-image-container
+    section.gallery .gallery-image-container
     {
         grid-template-columns: repeat(3, 1fr);
     }

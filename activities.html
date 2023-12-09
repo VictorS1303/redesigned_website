@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/responsiveness.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
     <script src="js/main.js" defer></script>
     <title>Jónshús | Activities</title>
 </head>
@@ -21,13 +23,13 @@
         </a>
         <ul>
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.html">Hjem</a>
             </li>
             <li>
                 <a href="jonshus.html">Jónshús</a>
             </li>
             <li>
-                <a href="activities.html" class="active">Activities</a>
+                <a href="activities.html" class="active">Aktiviteter</a>
             </li>
             <li>
                 <a href="jonsigurdsson.html">Jón Sigurðsson</a>
@@ -43,17 +45,17 @@
         <section class="activities" id="activities">
             <div class="overlay"></div>
             <header>
-                <h1>Activities</h1>
+                <h1>Aktiviteter</h1>
             </header>
             <img src="images/activities/activity_header/activity_header_bg.webp" alt="activities">
         </section>
 
         <!-- Section: Gallery -->
         <section class="gallery" id="gallery">
-            <div class="container gallery-header-container">
+            <div class="container heading-container  gallery-header-container">
                 <div class="container gallery-heading-container">
                     <header>
-                        <h1>Activities</h1>
+                        <h1>Aktiviteter</h1>
                     </header>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quidem eum recusandae! Quod,
@@ -64,26 +66,23 @@
                 </div>
             </div>
             <div class="container gallery-image-container">
-                <div>
-                    <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                        alt="gallery image">
-                </div>
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
+
+                <a href="images/activities/activity_gallery/baptism.webp" data-lightbox="activities" data-title="Dåb">
+                    <img src="images/activities/activity_gallery/baptism.webp" class="image gallery-image"
+                        alt="baptism">
+                </a>
+
+                <a href="images/activities/activity_gallery/exhibition.webp" data-lightbox="activities"
+                    data-title="Messe">
+                    <img src="images/activities/activity_gallery/exhibition.webp" class="image gallery-image"
+                        data-lightbox="activities" data-title="Messe" alt="exhibition">
+                </a>
+
+                <a href="images/activities/activity_gallery/knitting.webp" data-lightbox="activities"
+                    data-title="Hækling">
+                    <img src="images/activities/activity_gallery/knitting.webp" class="image gallery-image"
+                        alt="women knitting">
+                </a>
             </div>
         </section>
     </main>

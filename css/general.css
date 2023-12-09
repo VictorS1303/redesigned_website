@@ -106,9 +106,21 @@ section
 
 section:not(:first-child)
 {
-    padding: 50px;
+    padding: 100px;
 }
 
+section:first-child .heading-container
+{
+    text-align: center;
+}
+
+.heading-container p
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
 
 section:first-child header h1
 {
@@ -122,11 +134,14 @@ section:first-child header h1
     font-size: 8cqw;
 }
 
+section:first-child p
+{
+    text-align: center;
+}
+
 /* Section: * --> Gallery (all sections with a gallery) */
 section.gallery
 {
-    display: grid;
-    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -135,23 +150,36 @@ section.gallery
     padding: 0 100px;
 }
 
-section.gallery img
-{
-    border-radius: calc(var(--base-border-radius) / 1.5);
-    cursor: pointer;
-}
-
-.gallery-image-container
+section.gallery .gallery-image-container
 {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.gallery-image-container div
+section.gallery .gallery-image-container img
 {
-    position: relative;
+    border-radius: calc(var(--base-border-radius) / 1.5);
+    cursor: pointer;
+    object-fit: cover;
 }
+
+/* Title text underneath lightbox image */
+span.lb-caption
+{
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 20px;
+}
+
+/* Image counter text underneath lightbox image */
+span.lb-number
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
 
 section:not(:first-child) header h1
 {
@@ -175,8 +203,17 @@ img, video
 {
     display: block;
     height: auto;
-    width: 100%;
     object-fit: cover;
+}
+
+img
+{
+    width: 100%;
+}
+
+video
+{
+    width: 80%;
 }
 
 /* Label */
@@ -361,7 +398,7 @@ footer.footer .newsletter-and-socials input
     color: var(--red-color);
     font-size: 20px;
     border: 2px solid var(--red-color);
-    width: 80vw;
+    width: 59vw;
     margin: 5px 0 20px 0;
 }
 

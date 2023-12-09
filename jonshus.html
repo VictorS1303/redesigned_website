@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/responsiveness.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
     <script src="js/main.js" defer></script>
     <title>Jónshús | Jónshús</title>
 </head>
@@ -21,13 +23,13 @@
         </a>
         <ul>
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.html">Hjem</a>
             </li>
             <li>
                 <a href="jonshus.html" class="active">Jónshús</a>
             </li>
             <li>
-                <a href="activities.html">Activities</a>
+                <a href="activities.html">Aktiviteter</a>
             </li>
             <li>
                 <a href="jonsigurdsson.html">Jón Sigurðsson</a>
@@ -50,7 +52,7 @@
 
         <!-- Section: Gallery -->
         <section class="gallery" id="gallery">
-            <div class="container gallery-heading-container">
+            <div class="container heading-container  gallery-heading-container">
                 <header>
                     <h1>Jónshús</h1>
                 </header>
@@ -61,26 +63,19 @@
                 </p>
             </div>
             <div class="container gallery-image-container">
-                <div>
-                    <img src="images/" class="image gallery-image"
-                        alt="gallery image">
-                </div>
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
-                <img src="images/activities/activity_header/activity_header_bg.webp" class="image gallery-image"
-                    alt="gallery image">
+                <a href="images/jonshus/founders.webp" data-lightbox="jonshus"
+                    data-title="Carl Sæmundsen & Johanne Sædmundsen">
+                    <img src="images/jonshus/founders.webp" class="image gallery-image" alt="plaque with faces">
+                </a>
+                <a href="images/jonshus/jonshus.webp" data-lightbox="jonshus"
+                    data-title="Jonshus (set fra modsatte side af Øster Voldgade)">
+                    <img src="images/jonshus/jonshus.webp" class="image gallery-image" alt="plaque with faces">
+                </a>
+                <a href="images/jonshus/residents_outside.webp" data-lightbox="jonshus"
+                    data-title="Beboere udenfor Jónshús (taget på hjørnet mellem Øster Voldgade og Stokhusgade)">
+                    <img src="images/jonshus/residents_outside.webp" class="image gallery-image"
+                        alt="plaque with faces">
+                </a>
             </div>
         </section>
     </main>
