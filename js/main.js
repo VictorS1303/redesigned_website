@@ -37,3 +37,15 @@ function changeNavToggleBtnColor()
         ? navBarToggleBtn.classList.add('red')
         : navBarToggleBtn.classList.remove('red')
 }
+
+// Lightbox Navigations
+lightbox.option(
+    {
+        'wrapAround': true,
+        'disableScrolling': true,
+        'positionFromTop': 50,
+        'alwaysShowNavOnTouchDevices': true,
+        'fitImagesInViewport': true,
+        'resizeDuration': 600,
+    }
+)
